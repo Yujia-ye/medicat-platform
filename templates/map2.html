@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>医院地址</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <style>
+    body,
+    html,
+    #container {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        font-family: "微软雅黑";
+    }
+    </style>
+    <script src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=fPsywEusfhmrMx6DOhUUrG37GtQy2WZP"></script>
+</head>
+<body>
+    <div class="col-xl-6 col-lg-1">
+                                    <div class="subscribe-from">
+                                        <form action="http://127.0.0.1:5000/aid/query/loc/detail/{{loc.id}}" method="POST">
+                                            <input type="illname" name="add_name" placeholder="从何处出发：">
+                                            <button class="thm-btn btn-icon" type="submit">点击查询 <span><i class="fas fa-arrow-right"></i></span></button>
+                                        </form>
+                                    </div>
+    </div>
+    <div id="container"></div>
+</body>
+</html>
+<script>
+var map = new BMapGL.Map('container');
+var point = new BMapGL.Point("{{loc.lng}}","{{loc.lat}}");
+map.centerAndZoom(point, 20);
+// 创建点标记
+var marker = new BMapGL.Marker(point);
+map.addOverlay(marker);
+// 创建信息窗口
+var opts = {
+    width: 400,
+    height: 50,
+    title: "{{loc.name}}"
+};
+var infoWindow = new BMapGL.InfoWindow('{{loc.add}}', opts);
+// 点标记添加点击事件
+marker.addEventListener('click', function () {
+    map.openInfoWindow(infoWindow, point); // 开启信息窗口
+});
+</script>

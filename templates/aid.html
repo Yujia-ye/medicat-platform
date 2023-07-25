@@ -1,0 +1,323 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>医疗信息集成系统</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="manifest" href="{{url_for('static', filename='site.webmanifest')}}">
+		<link rel="shortcut icon" type="image/x-icon" href="{{url_for('static', filename='img/favicon.png')}}">
+        <!-- Place favicon.png in the root directory -->
+
+        <!-- CSS here -->
+
+        <link rel="stylesheet" href="{{url_for('static', filename='bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='owl.carousel.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='fontawesome-all.min.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='animate.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='magnific-popup.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='meanmenu.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='nice-select.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='slick.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='default.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='responsive.css')}}">
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+
+        <!-- preloader start -->
+        <div id="preloader">
+            <div class="preloader">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- preloader end  -->
+
+        <!-- header start -->
+        <header>
+            <div class="header-top d-none d-lg-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="right">
+
+                                <li><span></span>叶昱佳</li>
+                                <li><span></span>段抒彤</li>
+                                <li><span></span>数据采集与数据集成</li>
+                                <li><span></span>同济大学</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="logo">
+                                <a href="http://127.0.0.1:5000/"><img src="{{url_for('static', filename='img/logo/logo.png')}}" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-lg-10">
+                            <div class="main-menu f-right">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li class="dropdown"><a href="http://127.0.0.1:5000/hospitals/1">医院信息</a>
+                                            <ul class="submenu">
+                                                <li><a href="http://127.0.0.1:5000/hospitals/1">医院信息查询</a></li>
+                                                <li><a href="http://127.0.0.1:5000/hospitals/aid">急救信息查询</a></li>
+                                            </ul>
+                                        </li>
+
+                                        <li class="dropdown"><a href="http://127.0.0.1:5000/appointment">医院挂号预约信息</a>
+                                            <ul class="submenu">
+                                                <li><a href="http://127.0.0.1:5000/appointment">医院挂号预约信息</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown"><a href="http://127.0.0.1:5000/illname">疾病信息</a>
+                                            <ul class="submenu">
+                                                <li><a href="http://127.0.0.1:5000/illname">疾病信息查询</a></li>
+                                                <li><a href="http://127.0.0.1:5000/illtp">疾病信息知识图谱</a></li>
+
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="mobile-menu"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- info-bar start -->
+                <div class="btn-menu-main">
+                    <div class="crose mb-30">
+                        <button><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="logo-side mb-30">
+                        <a href="index.html">
+                            <img src="img/logo/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="side-info mb-30">
+                        <div class="sidebar-content mb-45">
+                            <h4>About us</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <a class="thm-btn btn-icon" href="#" style="animation-delay: 0.6s;" tabindex="0">Contact us <span><i class="fas fa-arrow-right"></i></span></a>
+                        </div>
+                        <div class="contact-list mb-30">
+                            <div class="sidebar-title">
+                                <h4>Contact us</h4>
+                            </div>
+                            <ul class="footer-info">
+                                <li>
+                                    <div class="footer-address mt-20">
+                                        <span><i class="fas fa-map-marker-alt"></i></span>
+                                        <h5>Bowery St., New York, NY 10013, USA</h5>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="footer-address mt-20">
+                                        <span><i class="fas fa-phone-alt"></i></span>
+                                        <h5>+1255 - 568 - 6523</h5>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="footer-address mt-20">
+                                        <span><i class="fas fa-envelope-open-text"></i></span>
+                                        <h5>information@gmail.com</h5>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sidebar-social mt-20">
+                            <a href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvas-overly"></div>
+                <!-- info-bar end -->
+            </div>
+        </header>
+        <!-- header end -->
+        
+        <main>
+            <!-- page title area start -->
+            <section class="page-title-area pt-160 pb-160" data-overlay="6" data-background="{{url_for('static', filename='img/bg/page-title-bg.jpg')}}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-12">
+                            <div class="page-title text-center">
+                                <h1>急救信息查询平台</h1>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb justify-content-center">
+                                        <li class="breadcrumb-item">
+                                            <a href="index.html">Home</a>
+                                        </li>
+                                        <li class="breadcrumb-item active" aria-current="page">医院信息</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- page title area end -->
+            <section class="counter-area gray-bg pt-100 pb-70">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <div class="single-couter single-couter-2 counter-box text-center mb-30">
+                                <h1 class="count count-bg-1"><span class="counter">20</span>+</h1>
+                                <h4>急救中心信息</h4>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <div class="single-couter single-couter-2 counter-box text-center mb-30">
+                                <h1 class="count count-2 count-bg-2"><span class="counter">150</span>+</h1>
+                                <h4>医院信息</h4>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <div class="single-couter single-couter-2 counter-box text-center mb-30">
+                                <h1 class="count count-3 count-bg-3"><span class="counter">10</span>k+</h1>
+                                <h4>疾病知识图谱</h4>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6">
+                            <div class="single-couter single-couter-2 counter-box text-center mb-30">
+                                <h1 class="count count-4 count-bg-4"><span class="counter">3</span>k+</h1>
+                                <h4 class="green-color">医生预约信息</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- team area start -->
+            <section class="counter-area gray-bg pt-100 pb-70">
+                <div class="container">
+                    <div class="section-title text-center">
+                        <h5>可查看上海市急救中心</h5>
+                        <h1>急救中心信息</h1>
+                    </div>
+                    <div class="row">
+                        {% for item in info %}
+                        <div class="col-xl-3 col-lg-15 col-md-6">
+                            <div class="team-single text-center mb-30 bg-light-gradient">
+                                <div class="team-thumb mb-25">
+                                    <img src="{{url_for('static', filename='img/icon/department-icon-01.png')}}" alt="">
+                                </div>
+
+                                <div class="team-text mb-25">
+                                    <h3>{{item.name}}</h3>
+
+                                    <h3>电话：{{item.class}}</h3>
+                                    <h4>邮编：{{item.level}}</h4>
+                                    <h4><form  method="post">
+                                    查看地址(点击查看地图)：
+                                        <a href = 'http://127.0.0.1:5000/aid/query/loc/{{item.id}}'>{{item.add}}</a></form></h4>
+                                </div>
+                                <div class="team-social">
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+            <!-- team area end -->
+
+
+            <!-- counter area start -->
+
+            <!-- counter area end -->
+
+
+        </main>
+
+        <!-- footer start -->
+        <footer>
+            <div class="footer-area footer-height pt-120 pb-80" data-background="{{url_for('static', filename='img/bg/footer-bg.jpg')}}">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6 pr-0">
+                            <div class="footer-widget footer-spache mb-40">
+                                <h3>About us</h3>
+                                <p>本系统旨在集成查询上海的156家医院，通过爬取搜医网、助医网等网站信息，提供医院核定床位、定位；某医院医生可预约时间、某疾病医生可预约 时间等信息，为用户提供便利。</p>
+                                <div class="footer-social mt-35">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 offset-xl-1"></div>
+                        <div class="col-xl-2 col-lg-2 col-md-6 offset-xl-1">
+                            <div class="footer-widget mb-40">
+                                <h3>Services</h3>
+                                <ul>
+                                    <li><a href="http://127.0.0.1:5000/hospitals/1">医院信息查询</a></li>
+                                    <li><a href="http://127.0.0.1:5000/hospitals/aid">急救信息查询</a></li>
+                                    <li><a href="http://127.0.0.1:5000/appointment">挂号信息查询</a></li>
+                                    <li><a href="http://127.0.0.1:5000/illname">医疗知识查询</a></li>
+                                    <li><a href="http://127.0.0.1:5000/illtp">医疗知识图谱</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area pt-30 pb-30">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="copyright-text text-center text-md-left">
+                                <p>Copyright &copy; 2020. 医疗信息系统</p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <div class="footer-menu text-center text-md-right">
+                                <ul>
+                                    <li><a href="#">叶昱佳 段抒彤</a></li>
+                                    <li><a href="#">数据集成与数据采集</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+
+        <!-- JS here -->
+        <script src="{{url_for('static', filename='js/vendor/modernizr-3.8.0.min.js')}}"></script>
+        <script src="{{url_for('static', filename='js/vendor/jquery-1.12.4.min.js')}}"></script>
+        <script src="{{url_for('static', filename='js/popper.min.js')}}"></script>
+        <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+        <script src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+        <script src="{{url_for('static', filename='js/waypoints.min.js')}}"></script>
+        <script src="{{url_for('static', filename='js/jquery.counterup.min.js')}}"></script>
+        <script src="{{url_for('static', filename='js/isotope.pkgd.min.js')}}"></script>
+        <script src="{{url_for('static', filename='js/slick.min.js')}}"></script>
+        <script src="{{url_for('static', filename='js/jquery.scrollUp.min.js')}}"></script>
+        <script src="{{url_for('static', filename='js/jquery.meanmenu.min.js')}}"></script>
+        <script src="{{url_for('static', filename='js/nice-select.js')}}"></script>
+        <script src="{{url_for('static', filename='js/imagesloaded.pkgd.min.js')}}"></script>
+        <script src="{{url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
+        <script src="{{url_for('static', filename='js/plugins.js')}}"></script>
+        <script src="{{url_for('static', filename='js/main.js')}}"></script>
+    </body>
+</html>
